@@ -1,0 +1,27 @@
+---
+import Carousel from './Carousel.jsx'
+
+---
+<div class="flex justify-center items-center static my-28 space-x-16  ">
+    <div class="w-3/6">
+        <h3 class="font-krona text-4xl text-hombleBlack">Todo lo que necesitas</h3>
+        <p class="mt-4 font-poppins text-xl">
+            En Modello Coworking, hemos creado un entorno perfecto para que tu productividad y comodidad sean máximas:
+        </p>
+        <ul class="mt-6 font-poppins text-xl list-disc p-6">
+            <li>Sillas Ergonómicas</li>
+            <li>Impresora</li>
+            <li>Proyector</li>
+            <li>Parqueadero</li>
+            <li>Café y restaurante</li>
+            <li>Pet Friendly</li>
+            <li>Terraza al aire libre</li>
+    
+        </ul>
+        <a class="text-redModello text-xl font-poppins underline hover:text-hombleBlack mt-8" href="">Descubre todo lo que Modello tiene para ofrecerte</a>
+    </div>
+    <div>
+        <Carousel client:visible />
+    </div>
+
+</div>

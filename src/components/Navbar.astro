@@ -1,0 +1,19 @@
+---
+import { Image } from 'astro:assets';
+
+---
+
+
+<nav class="relative w-full flex items-center justify-between z-20">
+    <div class="bg-pureWhite w-60 h-32 overflow-hidden content-center rounded-ee-[100px]">
+        <Image src="/images/LogoModello.png" alt="Modello Modello Coworking" width={146} height={90}  class='mx-auto'/>
+    </div>
+    <ul class="flex gap-12 pl-6 py-5 pr-4 mr-6 bg-pureWhite text-sm rounded-3xl">
+        <div class="gap-12 flex font-poppins text-sm font-normal">
+            <li class="hover:text-redModello"><a href="">Espacio</a></li>
+            <li class="hover:text-redModello"><a href="">Servicios</a></li> 
+            <li class="hover:text-redModello"><a href="">Ubicación</a></li>  
+        </div>
+         <li><a href="" class="px-6 py-3 bg-redModello text-pureWhite font-semibold rounded-3xl border border-transparent hover:bg-pureWhite hover:border hover:border-redModello hover:text-redModello">Agenda tu espacio</a></li>
+    </ul>
+</nav>

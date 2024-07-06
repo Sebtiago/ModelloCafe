@@ -1,0 +1,41 @@
+---
+import Map from '../components/Map.jsx';
+
+---
+<div class="flex w-full justify-between">
+    <div class="mt-11">
+        <h4 class="text-hombleBlack font-krona text-5xl">Ubicación</h4>
+        <ul class="mt-4 text-hombleBlack font-poppins text-xl">
+            <li>Villavicencio, Colombia</li>
+            <li>Calle 33A #42 - 71</li>
+            <li>Barrio Barzal Alto</li>
+        </ul>
+        <h4 class="mt-16 text-hombleBlack font-krona text-5xl">Contacto</h4>
+        <div class="flex gap-10 mt-4">
+            <img src="images/Phone.svg" alt="Icono telefono">
+            <p class="text-hombleBlack font-poppins text-xl">3134057211</p>
+        </div>
+    </div>
+    <div class="relative right-0">
+      <head>
+        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-OgtsxUUZ0ZbHBL-JbRel99B89NYD9yM&callback=console.debug&libraries=maps,marker&v=beta">
+        </script>
+        <style>
+          /* Always set the map height explicitly to define the size of the div
+           * element that contains the map. */
+          gmp-map {
+            width: 798px;
+            height:442px;
+            borderRadius: 32px;
+            overflow: hidden;
+          }
+        </style>
+      </head>
+      <section>
+   
+        <gmp-map center="4.142573275849755,-73.64237963811928" zoom="18" map-id="DEMO_MAP_ID" class="rounded-3xl w-[798px] h-[442px]">
+          <gmp-advanced-marker position="4.142573275849755,-73.64237963811928" title="Modello Co-working"></gmp-advanced-marker>
+        </gmp-map>
+      </section>
+    </div>
+</div>

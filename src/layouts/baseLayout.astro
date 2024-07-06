@@ -1,0 +1,38 @@
+---
+import { SEO } from "astro-seo";
+const { title, description } = Astro.props;
+import '@fontsource/krona-one';
+import '@fontsource/poppins';
+---
+
+<html lang="en">
+	<html lang="es">
+        <head>
+            <SEO
+            title={title || "Modello Coworking | Espacio de trabajo en Villavicencio"}
+            description={description || "Modello Coworking en Villavicencio: Alquila salas de reuniones, oficinas y disfruta de un café en un ambiente productivo. Agenda tu espacio hoy mismo."}
+            openGraph={{
+                basic: {
+                title: "Modello Coworking Villavicencio",
+                type: "website",
+                image: "https://scontent.fvvc1-1.fna.fbcdn.net/v/t39.30808-6/276290097_294516926146504_2168003976854606087_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=TVPwhiCapaUQ7kNvgFBwMKQ&_nc_ht=scontent.fvvc1-1.fna&oh=00_AYA2yTmdRe2W9N1SrVkRP9nLWt7_0hO2RSy89jL8O4IJJA&oe=6686544D",
+                url: "https://modello.com.co",
+                }
+            }}
+            extend={{
+                link: [
+                { rel: "icon", href: "/favicon.ico" },
+                { rel: "canonical", href: "https://modello.com.co" }
+                ],
+                meta: [
+                { name: "viewport", content: "width=device-width, initial-scale=1" },
+                { name: "theme-color", content: "#E42500" },
+                ],
+            }}
+            />
+                <meta charset="UTF-8">
+        </head>
+        <body class="font-poppins max-w-screen-xl mx-auto px-6">
+            <slot />
+        </body>
+</html>
