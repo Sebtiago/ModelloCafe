@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
 const slides = [
-  'https://i.ibb.co/ncrXc2V/1.png',
-  'https://i.ibb.co/B3s7v4h/2.png',
-  'https://i.ibb.co/XXR8kzF/3.png',
-  'https://i.ibb.co/yg7BSdM/4.png',
+  'images/0153fc95-dd65-4cb3-a168-c34a93f7adff.jpeg.webp',
+  'images/be0f8169-16df-4858-b19f-0e09e1a10aad.jpeg.webp',
+  'images/bfa84cba-f168-4be8-a423-34b0a85bd058.jpeg.webp',
 ];
 
 const Carousel = ({ autoSlide = false, autoSlideInterval = 3000 }) => {
@@ -20,14 +19,17 @@ const Carousel = ({ autoSlide = false, autoSlideInterval = 3000 }) => {
   }, [autoSlide, autoSlideInterval]);
 
   return (
-    <div className="relative w-[487px] h-[429px] rounded-3xl ">
-      <div className="overflow-hidden rounded-3xl">
+    <div className="relative w-[487px]  rounded-3xl ">
+      <div className="overflow-hidden rounded-3xl object-contain	">
+      <div class=" w-5 h-5 absolute rounded-br-full left-[170px] bottom-0 z-10" style={{boxShadow: '5px 5px 1px 4px white'}}> </div>
+      <div class=" w-5 h-5 absolute rounded-bl-full right-[170px] bottom-0 z-10" style={{boxShadow: '-5px 5px 1px 4px white'}}> </div>
+
         <div
           className="flex transition-transform ease-out duration-500 "
           style={{ transform: `translateX(-${curr * 100}%)` }}
         >
           {slides.map((src, index) => (
-            <div key={index} className="min-w-full max-h-[429px] ">
+            <div key={index} className="min-w-full max-h-[429px] over ">
               <img src={src} alt={`Slide ${index + 1}`} className="w-full h-full object-cover" />
             </div>
           ))}
