@@ -1,12 +1,12 @@
-<div class="w-fullpb-10 flex mt-28">
-    <div class=" w-1/2 h-full ">
-        <div class="min-h-[370px] justify-center content-center bg-pureWhite rounded-b-3xl redondeo ">
-            <h3 class="text-5xl font-krona font-normal z-20">Haz de  <span class="svg-background text-redModello z-0">Modello</span> coworking tu nuevo lugar favorito para trabajar</h3>
+<div class="w-full flex mt-28 max-lg:flex-col max-lg:gap-y-12">
+    <div class=" w-1/2 h-full max-lg:w-full">
+        <div class="justify-center content-center bg-pureWhite rounded-b-3xl redondeo max-lg:h-fit">
+            <h3 class="text-5xl max-sm:text-4xl font-krona font-normal max-lg:mt-0 mt-28 max-sm:pb-0 pb-12 z-20 w-full">Haz de  <span class="svg-background text-redModello z-0">Modello</span> coworking tu nuevo lugar favorito para trabajar</h3>
         </div>
-        <div class=" bg-hombleBlack w-full h-12 rounded-tl-3xl"></div>
+        <div class=" bg-hombleBlack w-full h-12 rounded-tl-3xl max-lg:hidden"></div>
     </div>
 
-    <div class="text-pureWhite bg-hombleBlack rounded-t-3xl z-20 justify-center font-poppins w-1/2 p-14">
+    <div class="text-pureWhite bg-hombleBlack rounded-t-3xl z-20 justify-center font-poppins w-1/2 p-14 max-lg:w-full">
         <h5 class="text-2xl">Nuestro espacio</h5>
         <p class="mt-2">Calle 33 A 42 - 71</p>
         <p>Barrio Barzal Alto Villavicencio, Colombia</p>
@@ -49,9 +49,11 @@
       background-position: center;
       z-index: -1;
     }
-    .redondeo{
-        box-shadow: 40px 40px 0px -4px rgba(7, 5, 5);
-
+    @media (min-width: 1024px) {
+    .redondeo {
+        box-shadow: 40px 40px 0px -4px rgba(29, 30, 28, 1);
     }
+    }
+
   </style>
   

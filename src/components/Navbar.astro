@@ -4,7 +4,7 @@ import { Image } from 'astro:assets';
 ---
 
 
-<nav class="relative w-full flex items-center justify-between z-20">
+<nav class="relative w-full flex items-center justify-between z-20 max-lg:hidden">
     <div class="bg-pureWhite w-60 h-32 overflow-hidden content-center rounded-ee-[100px]">
         <Image src="/images/LogoModello.png" alt="Modello Modello Coworking" width={146} height={90}  class='mx-auto'/>
     </div>
@@ -17,3 +17,5 @@ import { Image } from 'astro:assets';
          <li><a  href="https://api.whatsapp.com/send/?phone=573134057211&text&type=phone_number&app_absent=0" target="_blank" class="px-6 py-3 bg-redModello text-pureWhite font-semibold rounded-3xl border border-transparent hover:bg-pureWhite hover:border hover:border-redModello hover:text-redModello">Agenda tu espacio</a></li>
     </ul>
 </nav>
+
+

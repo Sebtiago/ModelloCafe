@@ -2,32 +2,38 @@
 import Map from '../components/Map.jsx';
 
 ---
-<div class="flex w-full justify-between">
+<div class="flex w-full justify-between max-lg:flex-col">
     <div class="mt-11">
-        <h4 class="text-hombleBlack font-krona text-5xl">Ubicación</h4>
+        <h4 class="text-hombleBlack font-krona text-5xl max-sm:text-4xl">Ubicación</h4>
         <ul class="mt-4 text-hombleBlack font-poppins text-xl">
             <li>Villavicencio, Colombia</li>
             <li>Calle 33A #42 - 71</li>
             <li>Barrio Barzal Alto</li>
         </ul>
-        <h4 class="mt-16 text-hombleBlack font-krona text-5xl">Contacto</h4>
+        <h4 class="mt-16 text-hombleBlack font-krona text-5xl max-sm:text-4xl">Contacto</h4>
         <div class="flex gap-10 mt-4">
             <img src="images/Phone.svg" alt="Icono telefono">
             <p class="text-hombleBlack font-poppins text-xl">3134057211</p>
         </div>
     </div>
-    <div class="relative right-0">
+    <div class="relative right-0 max-lg:mt-10">
       <head>
         <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-OgtsxUUZ0ZbHBL-JbRel99B89NYD9yM&callback=console.debug&libraries=maps,marker&v=beta">
         </script>
         <style>
           /* Always set the map height explicitly to define the size of the div
            * element that contains the map. */
-          gmp-map {
-            width: 798px;
-            height:442px;
-            borderRadius: 32px;
+           gmp-map {
+            width: 60vw;
+            height: 442px;
+            border-radius: 32px;
             overflow: hidden;
+          }
+
+          @media (max-width: 1024px) {
+            gmp-map {
+              width: 100%;
+            }
           }
         </style>
       </head>

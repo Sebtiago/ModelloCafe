@@ -1,0 +1,37 @@
+---
+import { Image } from 'astro:assets';
+
+---
+
+<!-- Menú de hamburguesa para pantallas más pequeñas -->
+<div class="lg:hidden flex items-center justify-between w-full py-4 px-6 z-0">
+    <div class="bg-pureWhite w-20 h-20 overflow-hidden rounded-full">
+        <Image src="/images/LogoModello.png" alt="Modello Modello Coworking" width={80} height={50} class='mx-auto'/>
+    </div>
+    <button id="menu-toggle" class="focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+    </button>
+</div>
+<div id="mobile-menu" class="hidden lg:hidden h-full w-full flex-col items-center justify-center bg-pureWhite p-6 gap-y-8">
+    <a href="#" class="hover:text-redModello h-6 w-full text-center">Espacio</a>
+    <a href="#" class="hover:text-redModello h-6 w-full text-center">Servicios</a>
+    <a href="#" class="hover:text-redModello h-6 w-full text-center">Ubicación</a>
+    <a href="https://api.whatsapp.com/send/?phone=573134057211&text&type=phone_number&app_absent=0" target="_blank" class="px-12 py-3 bg-redModello text-pureWhite font-semibold rounded-3xl border border-transparent hover:bg-pureWhite hover:border hover:border-redModello hover:text-redModello h-fit w-full text-center">Agenda tu espacio</a>
+</div>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    if (mobileMenu.classList.contains('hidden')) {
+      mobileMenu.classList.remove('hidden');
+      mobileMenu.classList.add('flex');
+    } else {
+      mobileMenu.classList.remove('flex');
+      mobileMenu.classList.add('hidden');
+    }
+  });
+</script>

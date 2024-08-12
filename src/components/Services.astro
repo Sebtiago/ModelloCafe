@@ -2,8 +2,8 @@
 import Carousel from './Carousel.jsx'
 
 ---
-<div class="flex justify-center items-center static my-28 space-x-16  ">
-    <div class="w-3/6">
+<div class="flex justify-center items-center static my-32 space-x-16 max-sm:space-x-0 max-lg:flex-col max-lg:my-12 w-full">
+    <div class="w-3/6 max-lg:w-full">
         <h3 class="font-krona text-4xl text-hombleBlack">Todo lo que necesitas</h3>
         <p class="mt-4 font-poppins text-xl">
             En Modello Coworking, hemos creado un entorno perfecto para que tu productividad y comodidad sean máximas:
@@ -20,7 +20,7 @@ import Carousel from './Carousel.jsx'
         </ul>
         <a class="text-redModello text-xl font-poppins underline hover:text-hombleBlack mt-8" href="https://api.whatsapp.com/send/?phone=573134057211&text&type=phone_number&app_absent=0" target="_blank">Descubre todo lo que Modello tiene para ofrecerte</a>
     </div>
-    <div>
+    <div class="max-lg:mt-8 w-full4">
         <Carousel client:visible />
     </div>
 

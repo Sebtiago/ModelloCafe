@@ -3,18 +3,16 @@ import Navbar from './Navbar.astro';
 
 
 ---
-<div class="relative max-w-screen-2xl w-full mt-7 ">
-  <Navbar/>
-  
-
-  <div class="absolute rounded-3xl inset-0 bg-cover bg-center" style="background-image: linear-gradient(254deg, rgba(82, 82, 82, 0.00) 15.57%, #1D1E1C 99.3%), url('images/HeroImage.jpg');"></div>
-  <div class=" w-12 h-12 absolute redondeo rounded-tl-full "> </div>
-  <div class=" w-12 h-12 absolute redondeo rounded-tl-full left-[238px] top-0"> </div>
-  <div class="relative text-pureWhite font-krona w-[640px] space-y-8 pt-4 pb-20 pl-14 top-0 z-10 mt-4">
-      <h2 class="text-5xl  font-normal">Un espacio en Villavicencio diseñado para tu <span class="svg-background">éxito</span></h2>
-      <h1 class="font-poppins text-base font-normal">Modello Coworking es el lugar donde los profesionales de Villavicencio se conectan, colaboran y crecen.</h1>
-      <a class="inline-block mt-8 px-6 py-3 rounded-3xl bg-pureWhite text-redModello border border-redModello font-poppins text-sm font-semibold hover:text-pureWhite hover:border-redModello hover:bg-redModello"  href="https://api.whatsapp.com/send/?phone=573134057211&text&type=phone_number&app_absent=0" target="_blank">Agenda tu espacio</a>
-    </div> 
+<div class="relative w-full">
+  <Navbar />
+  <div class="absolute rounded-3xl inset-0 bg-cover bg-center overflow-hidden" style="background-image: linear-gradient(254deg, rgba(82, 82, 82, 0.00) 15.57%, #1D1E1C 99.3%), url('images/HeroImage.jpg');"></div>
+  <div class="w-12 h-12 absolute redondeo rounded-tl-full max-lg:hidden"></div>
+  <div class="w-12 h-12 absolute redondeo rounded-tl-full left-[238px] max-sm:left-0 max top-0 max-lg:hidden"></div>
+  <div class="relative text-pureWhite font-krona space-y-8 pt-4 pb-20 pl-14 top-0 z-10 mt-4 max-sm:pl-2 items-center object-center content-center center">
+    <h2 class="text-5xl font-normal h-full w-full max-sm:w-56 m-6  max-lg:text-2xl">Un espacio en Villavicencio diseñado para tu <span class="svg-background">éxito</span></h2>
+    <h1 class="font-poppins text-base font-normal max-sm:w-56 m-6  ">Modello Coworking es el lugar donde los profesionales de Villavicencio se conectan, colaboran y crecen.</h1>
+    <a class="inline-block mt-8 px-6 py-3 ml-4 rounded-3xl bg-pureWhite text-redModello border border-redModello font-poppins text-sm font-semibold hover:text-pureWhite hover:border-redModello hover:bg-redModello" href="https://api.whatsapp.com/send/?phone=573134057211&text&type=phone_number&app_absent=0" target="_blank">Agenda tu espacio</a>
+  </div> 
 </div>
 
 <style>

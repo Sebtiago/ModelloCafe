@@ -4,6 +4,8 @@ import Spaces from '../components/Spaces.astro';
 import Banner from '../components/Banner.astro';
 import Services from '../components/Services.astro';
 import Location from '../components/Location.astro';
+import Burguer from '../components/Burguer.astro';
+
 
 import Layout from '../layouts/baseLayout.astro';
 
@@ -15,6 +17,7 @@ const seoProps = {
 ---
 
 <Layout {...seoProps}>
+  <Burguer/>
   <HeroSection/>
   <Spaces/>
   <Banner/>
