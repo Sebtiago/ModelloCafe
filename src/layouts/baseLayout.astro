@@ -4,11 +4,12 @@ const { title, description } = Astro.props;
 import '@fontsource/krona-one';
 import '@fontsource/poppins';
 import Footer from '../components/Footer.astro'
+
 ---
 
-<html lang="en">
-	<html lang="es">
+<html lang="es">
         <head>
+            
             <SEO
             title={title || "Modello Coworking | Espacio de trabajo en Villavicencio"}
             description={description || "Modello Coworking en Villavicencio: Alquila salas de reuniones, oficinas y disfruta de un café en un ambiente productivo. Agenda tu espacio hoy mismo."}
@@ -36,9 +37,17 @@ import Footer from '../components/Footer.astro'
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
                 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
                 <link rel="manifest" href="/site.webmanifest">
+            
             </head>
         <body class="font-poppins max-w-screen-xl mx-auto px-6">
             <slot />
             <Footer/>
         </body>
 </html>
+
+<style is:global>
+html {
+  scroll-behavior: smooth;
+}
+
+</style>

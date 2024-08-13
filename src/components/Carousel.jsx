@@ -21,8 +21,8 @@ const Carousel = ({ autoSlide = false, autoSlideInterval = 3000 }) => {
   return (
     <div className="relative w-[487px]  rounded-3xl max-sm:w-[74vw]">
       <div className="overflow-hidden rounded-3xl object-contain	">
-      <div className=" w-5 h-5 absolute rounded-br-full left-[170px] bottom-0 z-10 max-sm:left-[54px]" style={{boxShadow: '5px 5px 1px 4px white'}}> </div>
-      <div className=" w-5 h-5 absolute rounded-bl-full right-[170px] bottom-0 z-10 max-sm:right-[54px]" style={{boxShadow: '-5px 5px 1px 4px white'}}> </div>
+      <div className=" w-5 h-5 absolute rounded-br-full left-[170px] bottom-0 z-10 max-sm:hidden" style={{boxShadow: '5px 5px 1px 4px white'}}> </div>
+      <div className=" w-5 h-5 absolute rounded-bl-full right-[170px] bottom-0 z-10 max-sm:hidden" style={{boxShadow: '-5px 5px 1px 4px white'}}> </div>
 
         <div
           className="flex transition-transform ease-out duration-500 "
